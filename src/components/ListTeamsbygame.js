@@ -62,7 +62,7 @@ function ListTeamsByGame()
     return (
         <div className="Teams-list">
             {content}
-            <Stack spacing={2} >
+            <Stack spacing={2} style={{color: 'white'}}>
             {/* <Typography>Page: {numpage}</Typography> */}
             <Pagination style={{ margin:30 }}count={Math.ceil(totalpages/nbritems)} color="secondary" page={numpage} onChange={handleChange}  />
             </Stack>

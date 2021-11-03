@@ -57,7 +57,7 @@ function ListTeam2()
     return (
         <div >
             {content}
-            <Stack spacing={5} style={{ margin:30 }}>
+            <Stack spacing={5} style={{ margin:30,color: 'white'}}>
             {/* <Typography>Page: {numpage}</Typography> */}
             <Pagination count={Math.ceil(totalpages/nbritems)} color="secondary" page={numpage} onChange={handleChange}  />
             </Stack>
