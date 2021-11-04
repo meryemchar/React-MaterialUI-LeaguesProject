@@ -18,8 +18,8 @@ export const fetchLeagues = async (numPage=2,nbrItems=5) =>
 
     const json = await response.json();
 
-    console.log("headers :" + response.headers)
-    return {json:json,headers: response.headers};
+    console.log("x-total :" + response.headers.get('x-total'))
+    return {json:json,xtotal: response.headers.get('x-total')};
 }
 
 

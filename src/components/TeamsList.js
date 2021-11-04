@@ -21,9 +21,9 @@ function TeamsList()
 
         //si fetchLeague terminé
         setList(data.json);
-        console.log("xtotal : leagus : " + data.headers.get('x-total'));
+        console.log("xtotal : leagus : " + data.xtotal);
         setLoading(false);
-        setTotalpages(data.headers.get('x-total'));
+        setTotalpages(data.xtotal);
     }
 
     const handleChange=(event,value)=>{
